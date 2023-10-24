@@ -19,7 +19,7 @@ public class Funcionario extends Pessoa{
 	}
 
 	
-//Construtor
+//Construtor da classe
 	
 	public Funcionario(int cpf, String nome, int telefone, String cargo, double salario) {
 		super(cpf, nome, telefone);
