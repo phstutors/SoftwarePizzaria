@@ -10,7 +10,7 @@
 
 
 > 💡 # Authors 👨‍💻
-> <br>[<img src="https://avatars.githubusercontent.com/u/62365429?s=96&v=4" width=115><br><sub>Pedro Henrique (PhsTutors</sub>](https://github.com/phstutors)  
-<br>[<img src="https://avatars.githubusercontent.com/u/129141240?v=4" width=115><br><sub>Pedro Henrique (PhsTutors</sub>](https://github.com/Wosniak08)  
+> <br>[<img src="https://avatars.githubusercontent.com/u/62365429?s=96&v=4" width=115><br><sub>Pedro Henrique (PhsTutors)</sub>](https://github.com/phstutors)  
+<br>[<img src="https://avatars.githubusercontent.com/u/129141240?v=4" width=115><br><sub>Eduardo Barreto</sub>](https://github.com/Wosniak08)  
 
 
