@@ -1,5 +1,5 @@
 # Software Pizzaria Bom Apetite
-<img height="420" src="https://i.imgur.com/jHd6l8y.png"> 
+<img height="240" src="https://i.imgur.com/jHd6l8y.png"> 
 # Ways to use 👇  
 - List all ways to use your project
 - List all ways to use your project
