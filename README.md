@@ -1,4 +1,4 @@
-[comment]: <https://i.imgur.com/jHd6l8y.png> (Add a simple banner for the projects here.) 
+[comment]: <img height="720" src="https://i.imgur.com/jHd6l8y.png"> (Add a simple banner for the projects here.) 
 # Ways to use 👇  
 - List all ways to use your project
 - List all ways to use your project
