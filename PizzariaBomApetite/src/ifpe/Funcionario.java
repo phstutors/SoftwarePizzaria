@@ -19,7 +19,8 @@ public class Funcionario extends Pessoa{
 	}
 
 	
-
+//Construtor
+	
 	public Funcionario(int cpf, String nome, int telefone, String cargo, double salario) {
 		super(cpf, nome, telefone);
 		setCargo(cargo);
