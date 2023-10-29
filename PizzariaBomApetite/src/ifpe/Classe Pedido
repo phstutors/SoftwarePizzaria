@@ -1,0 +1,36 @@
+package pacote;
+
+public class Pedido {
+
+
+    // Atributos
+    private int numeroPedido;
+    private String descricao;
+    private double valorTotal;
+
+    // Construtor
+    public Pedido(int numeroPedido, String descricao, double valorTotal) {
+        this.numeroPedido = numeroPedido;
+        this.descricao = descricao;
+        this.valorTotal = valorTotal;
+    }
+
+    // Métodos
+    public void exibirDetalhes() {
+        System.out.println("Número do Pedido: " + numeroPedido);
+        System.out.println("Descrição: " + descricao);
+        System.out.println("Valor Total: R$" + valorTotal);
+    }
+
+    public double calcularDesconto(double percentualDesconto) {
+        return valorTotal - (valorTotal * percentualDesconto / 100);
+    }
+
+    public static void main(String[] args) {
+        Pedido pedido1 = new Pedido(1, "Produtos diversos", 100.0);
+        pedido1.exibirDetalhes();
+
+        double desconto = pedido1.calcularDesconto(10);
+        System.out.println("Valor com 10% de desconto: R$" + desconto);
+    }
+}

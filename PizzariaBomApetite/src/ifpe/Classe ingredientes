@@ -1,0 +1,59 @@
+package pacote;
+
+public class ingredientes {
+
+
+    // Atributos
+    private String nome;
+    private double quantidade;
+    private String unidadeMedida;
+
+    // Construtor
+    public void Ingrediente(String nome, double quantidade, String unidadeMedida) {
+        this.nome = nome;
+        this.quantidade = quantidade;
+        this.unidadeMedida = unidadeMedida;
+    }
+
+    // Métodos
+    public void exibirDetalhes() {
+        System.out.println("Nome: " + nome);
+        System.out.println("Quantidade: " + quantidade + " " + unidadeMedida);
+    }
+
+    // Getters e Setters
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(double quantidade) {
+        this.quantidade = quantidade;
+    }
+
+    public String getUnidadeMedida() {
+        return unidadeMedida;
+    }
+
+    public void setUnidadeMedida(String unidadeMedida) {
+        this.unidadeMedida = unidadeMedida;
+    }
+
+    public static void main(String[] args) {
+        ingredientes ingrediente1 = new ingredientes();
+        ingredientes ingrediente2 = new ingredientes();
+
+        System.out.println("Detalhes do Ingrediente 1:");
+        ingrediente1.exibirDetalhes();
+
+        System.out.println("\nDetalhes do Ingrediente 2:");
+        ingrediente2.exibirDetalhes();
+    }
+}
