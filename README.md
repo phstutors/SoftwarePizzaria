@@ -1,4 +1,10 @@
 # Software Pizzaria Bom Apetite
+## Descrição:
+
+<p>Projeto Final da Disciplina de Programação Orientada a Objetos no Instituto Federal de Pernambuco - Campus Palmares.
+
+Neste projeto, será desenvolvido um sistema complexo que demonstra proficiência no paradigma da orientação a objetos. O projeto vai abrangir, no mínimo, 12 classes interligadas, incorporando os conceitos fundamentais da POO, como polimorfismo, classes abstratas, encapsulamento e herança. </p>
+
 <img height="240" src="https://i.imgur.com/jHd6l8y.png"> 
 <p>Funções 👇</p>
 
