@@ -1,7 +1,14 @@
 package ifpe;
 
+import java.util.List;
+
+
 public class Cliente extends Pessoa{
+	
 	private String endereco;
+	
+	private List<Pedido> pedidos;
+	
 	
 
 	public String getEndereco() {

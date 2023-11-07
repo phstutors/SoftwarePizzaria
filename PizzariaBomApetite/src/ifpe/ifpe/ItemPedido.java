@@ -1,10 +1,10 @@
-package ProjePoo;
+package ifpe;
+
 
 public class ItemPedido {
 	private int id;
 	private int quantidade;
 	private double precoUnitario;
-	private Pedido pedido;
 	private Pizza pizza;
 	
 	public ItemPedido(int id, int quantidade,double precoUnitario) {
@@ -37,15 +37,6 @@ public class ItemPedido {
 	public void setPrecoUnitario(double precoUnitario) {
 		this.precoUnitario = precoUnitario;
 	}
-
-	public Pedido getPedido() {
-		return pedido;
-	}
-
-	public void setPedido(Pedido pedido) {
-		this.pedido = pedido;
-	}
-
 	public Pizza getPizza() {
 		return pizza;
 	}
