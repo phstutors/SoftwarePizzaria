@@ -67,8 +67,10 @@ public class Pedido {
         System.out.println("Valor Total: R$" + valorTotal);
     }
     
-    public void calcularTotal(double precoUnidade, int quantidade) {
-		setValorTotal(precoUnidade*quantidade);
+    public void calcularTotal() {
+		for (ItemPedido itemPedido : itensPedidos) {
+			setValorTotal(itemPedido.getPrecoUnitario() * itemPedido.getQuantidade());
+		}
     	
     }
 

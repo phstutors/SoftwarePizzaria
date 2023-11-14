@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class App {
 
@@ -5,5 +6,44 @@ public class App {
 	public static void main(String[] args) {
 		
 		//Aqui será a nosssa Aplicação
+		String senha = "admin";
+		Scanner sc = new Scanner(System.in);
+		
+		
+		System.out.println("-".repeat(15));
+		
+		System.out.println("Seja bem vindo a Pizzaria Bom apetit \n Você é funcionario ou cliente?");
+		
+		String opcao = sc.next();
+		
+		if(opcao.toLowerCase() == "cliente" || opcao.toLowerCase() == "c") {
+			
+			
+			
+			
+		}else if(opcao.toLowerCase() == "funcionario" || opcao.toLowerCase() == "f"){
+			
+			
+			System.out.println("Digite sua senha de acesso: ");
+			String senhaW = sc.next();
+			while(senhaW.toLowerCase() == senha){
+				System.out.println("".repeat(15));
+				System.out.println("Seja bem vindo ao painel da Pizzaria: ");
+				System.out.println("-".repeat(15));
+				
+			}
+			
+			
+			
+		}else {
+			
+			System.out.println("Erro, entrada incorreta!");
+			
+		}
+		
+		
+		System.out.println("-".repeat(15));
+		
+		
 	}
 }
