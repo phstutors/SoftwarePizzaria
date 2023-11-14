@@ -10,6 +10,8 @@ public abstract class Pizza {
 		this.sabor= sabor;
 		this.tamanho= tamanho;
 	}
+	public abstract void adicionarBordasRecheadas();
+	
 	public Pizza() {	
 	}
 	public String getId() {
