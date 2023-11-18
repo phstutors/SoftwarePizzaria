@@ -6,13 +6,16 @@ public class ItemPedido {
 	private int quantidade;
 	private double precoUnitario;
 	private Pizza pizza;
-	
+
 	public ItemPedido(int id, int quantidade,double precoUnitario) {
 		this.id=id;
 		this.quantidade=quantidade;
 		this.precoUnitario=precoUnitario;
-		
-		}
+
+	}
+	public ItemPedido() {
+		// TODO Auto-generated constructor stub
+	}
 
 	public int getId() {
 		return id;
@@ -44,8 +47,8 @@ public class ItemPedido {
 	public void setPizza(Pizza pizza) {
 		this.pizza = pizza;
 	}
-	
-	
-	
+
+
+
 
 }

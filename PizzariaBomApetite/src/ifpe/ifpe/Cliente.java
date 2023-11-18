@@ -25,5 +25,7 @@ public class Cliente extends Pessoa{
 		// TODO Auto-generated constructor stub
 	}
 
-	
+	public Cliente() {
+		// TODO Auto-generated constructor stub
+	}
 }
