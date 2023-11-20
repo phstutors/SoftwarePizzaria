@@ -1,4 +1,4 @@
-package ifpe;
+
 
 import java.util.List;
 import java.util.Scanner;
@@ -7,26 +7,12 @@ public class PizzaSalgada extends Pizza {
 	
 	
 	private List<Ingrediente> ingredientes;
-	private String sabor;
-	private double preco;
-	
-	
-	public String getSabor() {
-		return sabor;
-	}
-	public void setSabor(String sabor) {
-		this.sabor = sabor;
-	}
-	public double getPreco() {
-		return preco;
-	}
-	public void setPreco(double preco) {
-		this.preco = preco;
-	}
+
+
 	public void setIngredientes(List<Ingrediente> ingredientes) {
 		this.ingredientes = ingredientes;
 	}
-	public PizzaSalgada(String id,String sabor,String tamanho,List<Ingrediente> ingredientes, double preco ) {
+	public PizzaSalgada(int id,String sabor,String tamanho,List<Ingrediente> ingredientes, double preco ) {
 		super(id,sabor,tamanho);
 		setIngredientes(ingredientes);
 		setPreco(preco);
@@ -48,12 +34,23 @@ public class PizzaSalgada extends Pizza {
         int escolha = perguntarCliente.nextInt();
 
         if (escolha == 1) {
+        	System.out.println("Recheios Disponiveis: \n Chocolate \n Morango \n Romeu e Julieta");
             System.out.print("Digite o nome do recheio desejado: ");
             String nomeRecheio = perguntarCliente.next();
+            setBorda(nomeRecheio);
             System.out.println("Bordas recheadas com " + nomeRecheio + " adicionadas à sua pizza!");
-        } else {
+        } else if(escolha == 2){
             System.out.println("Bordas recheadas não adicionadas à sua pizza.");
+        }else {
+        	System.out.println("Opcao Incorreta!");
         }
     }
+	
+	@Override
+	public void addPizza() {
+		// TODO Auto-generated method stub
+		super.addPizza();
+		setSabor(PizzaSalgada.class.getSimpleName());
+	}
 	
 }

@@ -1,13 +1,11 @@
-package ifpe;
+
 
 import java.util.List;
 import java.util.Scanner;
 
 public class PizzaDoce extends Pizza {
 	
-	private String sabor;
 	List<Cobertura> coberturas;
-	private double preco;
 	
 	public List<Cobertura> getCoberturas() {
 		return coberturas;
@@ -15,13 +13,7 @@ public class PizzaDoce extends Pizza {
 	public void setCoberturas(List<Cobertura> coberturas) {
 		this.coberturas = coberturas;
 	}
-	public String getSabor() {
-		return sabor;
-	}
-	public void setSabor(String sabor) {
-		this.sabor = sabor;
-	}
-	public PizzaDoce(String id,String sabor,String tamanho, List<Cobertura> coberturas, double preco) {
+	public PizzaDoce(int id,String sabor,String tamanho, List<Cobertura> coberturas, double preco) {
 		super(id,sabor,tamanho);
 		setSabor(sabor);;
 		setCoberturas(coberturas);
@@ -29,12 +21,6 @@ public class PizzaDoce extends Pizza {
 	}
 	public PizzaDoce() {
 
-	}
-	public double getPreco() {
-		return preco;
-	}
-	public void setPreco(double preco) {
-		this.preco = preco;
 	}
 	
 	public void adicionarBordasRecheadas() {
@@ -48,12 +34,21 @@ public class PizzaDoce extends Pizza {
         int escolha = perguntarCliente.nextInt();
 
         if (escolha == 1) {
+        	System.out.println("Recheios Disponiveis: \n Chocolate \n Morango \n Romeu e Julieta");
             System.out.print("Digite o nome do recheio desejado: ");
             String nomeRecheio = perguntarCliente.next();
+            setBorda(nomeRecheio);
             System.out.println("Bordas recheadas com " + nomeRecheio + " adicionadas à sua pizza!");
         } else {
             System.out.println("Bordas recheadas não adicionadas à sua pizza.");
         }
     }
+	
+	@Override
+	public void addPizza() {
+		// TODO Auto-generated method stub
+		super.addPizza();
+		setSabor(PizzaDoce.class.getSimpleName());
+	}
 
 }

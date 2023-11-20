@@ -1,6 +1,9 @@
-package ifpe;
 
+
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+import java.util.Scanner;
 
 public class Cobertura {
 	
@@ -14,6 +17,9 @@ public class Cobertura {
 		setSabor(sabor);
 		setQuantidadeDisponivel(quantidadeDisponivel);
 		setFornecedores(fornecedores);
+	}
+	public Cobertura() {
+		
 	}
 
 	public int getId() {
@@ -39,6 +45,18 @@ public class Cobertura {
 	}
 	public void setFornecedores(List<Fornecedor> fornecedores) {
 		this.fornecedores = fornecedores;
+	}
+	
+	public void addCobertura() {
+		Scanner sc = new Scanner(System.in);
+		Random random = new Random();
+		System.out.print("Digite o Sabor da cobertura: ");
+		String saborCobertura = sc.nextLine();
+		System.out.print("Digite a quantidade disponivel: ");
+		int qDisponivel = sc.nextInt();
+		setSabor(saborCobertura);
+		setQuantidadeDisponivel(qDisponivel);
+		setId(random.nextInt());
 	}
 
 	

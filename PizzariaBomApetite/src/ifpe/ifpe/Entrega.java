@@ -1,18 +1,25 @@
-package ifpe;
-
-
+import java.time.Duration;
+import java.time.LocalTime;
+import java.util.List;
+import java.util.Random;
 
 public class Entrega {
 	private int id;
 	private String endereco;
-	private int  tempoEntrega;
-	private Pedido pedido;
+	private int  tempoEntrega = 40;
+	private List<Pedido> pedidos;
 	
-	public Entrega(int id, String endereco,int tempoEntrega) {
-		this.id=id;
+	public Entrega(String endereco,int tempoEntrega) {
+		Random random = new Random();
+		setId(random.nextInt());
 		this.endereco=endereco;
 		this.tempoEntrega=tempoEntrega;
 		
+		
+	}
+	
+	public Entrega() {
+		// TODO Auto-generated constructor stub
 	}
 
 	public int getId() {
@@ -39,12 +46,24 @@ public class Entrega {
 		this.tempoEntrega = tempoEntrega;
 	}
 
-	public Pedido getPedido() {
-		return pedido;
+
+	public void calcularEntrega() {
+		LocalTime horaAtual = LocalTime.now(); 
+		Duration duracaoEntrega = Duration.ofMinutes(tempoEntrega);
+		LocalTime horarioEstimadoEntrega = horaAtual.plus(duracaoEntrega); 
+		System.out.println("Hora atual: " + horaAtual);
+		System.out.println("Tempo de entrega em minutos: " + tempoEntrega); 
+		System.out.println("Horário estimado de entrega: " + horarioEstimadoEntrega);
+		}
+
+
+	public List<Pedido> getPedidos() {
+		return pedidos;
 	}
 
-	public void setPedido(Pedido pedido) {
-		this.pedido = pedido;
+	public void setPedidos(List<Pedido> pedidos) {
+		this.pedidos = pedidos;
+	} 
 	}
 	
-	}
+	

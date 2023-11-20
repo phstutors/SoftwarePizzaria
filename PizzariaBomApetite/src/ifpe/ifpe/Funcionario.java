@@ -1,4 +1,4 @@
-package ifpe;
+
 
 public class Funcionario extends Pessoa{
 
@@ -18,11 +18,14 @@ public class Funcionario extends Pessoa{
 	public void setSalario(double salario) {
 		this.salario = salario;
 	}
+	public Funcionario() {
+		// TODO Auto-generated constructor stub
+	}
 
 	
 //Construtor da classe
 	
-	public Funcionario(int cpf, String nome, int telefone, String cargo, double salario) {
+	public Funcionario(String cpf, String nome, String telefone, String cargo, double salario) {
 		super(cpf, nome, telefone);
 		setCargo(cargo);
 		setSalario(salario);

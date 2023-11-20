@@ -1,14 +1,13 @@
-package ifpe;
 
 public class Pessoa {
 
 	
-	protected int cpf;
-	public int getCpf() {
+	private String cpf;
+	public String getCpf() {
 		return cpf;
 	}
 
-	public void setCpf(int cpf) {
+	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
 
@@ -19,19 +18,22 @@ public class Pessoa {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+	public Pessoa() {
+		// TODO Auto-generated constructor stub
+	}
 
-	public int getTelefone() {
+	public String getTelefone() {
 		return telefone;
 	}
 
-	public void setTelefone(int telefone) {
+	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
 
-	protected String nome;
-	protected int telefone;
+	private String nome;
+	private String telefone;
 	
-	public Pessoa(int cpf, String nome, int telefone) {
+	public Pessoa(String cpf, String nome, String telefone) {
 		
 		setCpf(cpf);
 		setNome(nome);

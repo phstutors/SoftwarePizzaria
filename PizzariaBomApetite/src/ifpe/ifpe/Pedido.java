@@ -1,10 +1,14 @@
-package ifpe;
+
 
 import java.util.List;
+import java.util.Random;
 
 
 public class Pedido {
 
+	public Pedido() {
+		// TODO Auto-generated constructor stub
+	}
 
     // Atributos
     private int numeroPedido;
@@ -55,7 +59,8 @@ public class Pedido {
 
 	// Construtor
     public Pedido(int numeroPedido, String descricao, double valorTotal) {
-        this.numeroPedido = numeroPedido;
+        Random random = new Random();
+        setNumeroPedido(random.nextInt());
         this.descricao = descricao;
         this.valorTotal = valorTotal;
     }
@@ -65,17 +70,40 @@ public class Pedido {
         System.out.println("Número do Pedido: " + numeroPedido);
         System.out.println("Descrição: " + descricao);
         System.out.println("Valor Total: R$" + valorTotal);
+       for (ItemPedido itemPedido : itensPedidos) {
+    	   
+    	   for(Pizza pizza : itemPedido.getPizzas()) {
+    		   System.out.println("Suas pizzas: " + "Sabor: " + pizza.getSabor() + " Tamanho: " + pizza.getTamanho());
+    	   }
+		
+	}
     }
     
-    public void calcularTotal() {
-		for (ItemPedido itemPedido : itensPedidos) {
-			setValorTotal(itemPedido.getPrecoUnitario() * itemPedido.getQuantidade());
-		}
-    	
+    public double calcularTotal() {
+    	   double total = 0.0;
+
+    	    for (ItemPedido itemPedido : itensPedidos) {
+    	        for (Pizza pizza : itemPedido.getPizzas()) {
+    	            total += pizza.getPreco(); // Adiciona o preço de cada pizza ao total
+    	        }
+    	    }
+
+    	    setValorTotal(total); // Define o valor total após calcular o total das pizzas
+    	    return total;
     }
 
+
     public double calcularDesconto(double percentualDesconto) {
-        return valorTotal - (valorTotal * percentualDesconto / 100);
+    	double total = 0.0;
+
+	    for (ItemPedido itemPedido : itensPedidos) {
+	        for (Pizza pizza : itemPedido.getPizzas()) {
+	            total += pizza.getPreco(); // Adiciona o preço de cada pizza ao total
+	        }
+	    }
+
+	    setValorTotal(total - (total * percentualDesconto / 100)); // Define o valor total após calcular o total das pizzas
+        return total;
     }
 
 
