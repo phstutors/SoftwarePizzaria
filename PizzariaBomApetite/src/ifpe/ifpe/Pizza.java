@@ -10,8 +10,9 @@ public abstract class Pizza {
 	private double preco;
 	private String borda = "tradicional";
 
-	public Pizza(int id,String sabor,String tamanho) {
-		this.id= id;
+	public Pizza(String sabor,String tamanho) {
+		Random random = new Random();
+		setId(random.nextInt()+1);
 		this.sabor= sabor;
 		this.tamanho= tamanho;
 	}

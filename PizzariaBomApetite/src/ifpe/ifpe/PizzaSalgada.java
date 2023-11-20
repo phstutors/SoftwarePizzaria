@@ -12,8 +12,8 @@ public class PizzaSalgada extends Pizza {
 	public void setIngredientes(List<Ingrediente> ingredientes) {
 		this.ingredientes = ingredientes;
 	}
-	public PizzaSalgada(int id,String sabor,String tamanho,List<Ingrediente> ingredientes, double preco ) {
-		super(id,sabor,tamanho);
+	public PizzaSalgada(String sabor,String tamanho,List<Ingrediente> ingredientes, double preco ) {
+		super(sabor,tamanho);
 		setIngredientes(ingredientes);
 		setPreco(preco);
 	}

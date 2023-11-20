@@ -13,8 +13,8 @@ public class PizzaDoce extends Pizza {
 	public void setCoberturas(List<Cobertura> coberturas) {
 		this.coberturas = coberturas;
 	}
-	public PizzaDoce(int id,String sabor,String tamanho, List<Cobertura> coberturas, double preco) {
-		super(id,sabor,tamanho);
+	public PizzaDoce(String sabor,String tamanho, List<Cobertura> coberturas, double preco) {
+		super(sabor,tamanho);
 		setSabor(sabor);;
 		setCoberturas(coberturas);
 		setPreco(preco);

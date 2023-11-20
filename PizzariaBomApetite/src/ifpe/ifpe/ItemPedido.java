@@ -19,16 +19,17 @@ public class ItemPedido {
 
 
 	private double precoUnitario;
-	private Pizza pizza;
 
 	public ItemPedido(int id, int quantidade,double precoUnitario) {
 		this.id=id;
-		this.quantidade=quantidade;
-		this.precoUnitario=precoUnitario;
+		this.quantidade = pizzas.size();
+		for (Pizza pizza : pizzas) {
+			setPrecoUnitario(pizza.getPreco());
+		}
 
 	}
 	public ItemPedido() {
-		// TODO Auto-generated constructor stub
+
 	}
 
 
@@ -45,7 +46,7 @@ public class ItemPedido {
 	}
 
 	public void setQuantidade(int quantidade) {
-		this.quantidade = quantidade;
+		this.quantidade = pizzas.size();
 	}
 
 	public List<Pizza> getPizzas() {
@@ -55,10 +56,16 @@ public class ItemPedido {
 	public void setPizzas(List<Pizza> pizzas) {
 		this.pizzas = pizzas;
 	}
-
-	public void setPizza(Pizza pizza) {
-		this.pizza = pizza;
+	public double getPrecoUnitario() {
+		return precoUnitario;
 	}
+	public void setPrecoUnitario(double precoUnitario) {
+		for (Pizza pizza : pizzas) {
+			setPrecoUnitario(pizza.getPreco());
+		}
+	}
+
+
 
 
 
