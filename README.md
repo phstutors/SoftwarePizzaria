@@ -14,6 +14,9 @@ Neste projeto, será desenvolvido um sistema complexo que demonstra proficiênci
 * Venda de pizzas
 * Entrega com prazos
 
+> 💡 # Diagrama de Classe 
+
+<p>Faça o download do diagrama de classe em PDF: https://drive.google.com/file/d/1a2sYqyVkZMAVZPZb3eKRuzoRgksr2sV0/view?usp=sharing </p>
 
 > 💡 # Authors 👨‍💻
 > <br>[<img src="https://avatars.githubusercontent.com/u/62365429?s=96&v=4" width=115><br><sub>Pedro Henrique (PhsTutors)</sub>](https://github.com/phstutors)  
