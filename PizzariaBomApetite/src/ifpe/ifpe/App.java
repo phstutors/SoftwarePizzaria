@@ -41,7 +41,7 @@ public class App {
 						PizzaDoce pizzaDoce = new PizzaDoce();
 						pizzaDoce.addPizza();
 						
-						System.out.println("Deseja Adicionar borda? \n 1: Sim \n 2: Não ");
+						System.out.println("Deseja Adicionar Cobertura? \n 1: Sim \n 2: Não ");
 						int escolhaContador = sc.nextInt();
 						
 					while(escolhaContador == 1) {
@@ -74,7 +74,7 @@ public class App {
 						PizzaSalgada pizzaSalgada = new PizzaSalgada();
 						pizzaSalgada.addPizza();
 						
-						System.out.println("Deseja Adicionar ingredientes extras? \n 1: Sim \n 2: Não ");
+						System.out.println("Adicionar ingredientes na pizza? \n 1: Sim \n 2: Não ");
 						int escolhaContador1 = sc.nextInt();
 						
 					while(escolhaContador1 == 1) {
@@ -95,8 +95,7 @@ public class App {
 						
 						pizzaSalgada.setIngredientes(ingredientes);
 						
-						System.out.println("Deseja Adiciona11"
-								+ "r mais ingredientes? \n 1: Sim \n 2: Não ");
+						System.out.println("Deseja Adiciona mais ingredientes? \n 1: Sim \n 2: Não ");
 						escolhaContador1 = sc.nextInt();
 					}
 					pizzaSalgada.adicionarBordasRecheadas();
@@ -151,6 +150,7 @@ public class App {
 					    
 					    entrega.setEndereco(cliente.getEndereco());
 					    entrega.setPedidos(pedidos);
+					    pedido.setCliente(cliente);
 					    
 					    List<Entrega> entregas = new ArrayList<Entrega>();
 					    

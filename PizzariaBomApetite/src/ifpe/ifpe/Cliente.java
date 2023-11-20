@@ -27,9 +27,7 @@ public class Cliente extends Pessoa{
 		setEndereco(endereco);
 		
 	}
-	public Cliente() {
-		
-	}
+
 	
 	
 	

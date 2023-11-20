@@ -6,16 +6,13 @@ import java.util.Random;
 
 public class Pedido {
 
-	public Pedido() {
-		// TODO Auto-generated constructor stub
-	}
-
     // Atributos
     private int numeroPedido;
     private String descricao;
     private double valorTotal;
     private List<ItemPedido> itensPedidos;
     private Entrega entrega;
+    private Cliente cliente;
 
     public int getNumeroPedido() {
 		return numeroPedido;
@@ -108,6 +105,14 @@ public class Pedido {
 	    setValorTotal(total - (total * percentualDesconto / 100)); // Define o valor total após calcular o total das pizzas
         return total;
     }
+
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
 
 
 }
