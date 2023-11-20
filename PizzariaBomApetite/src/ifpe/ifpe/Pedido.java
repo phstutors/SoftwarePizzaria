@@ -64,6 +64,9 @@ public class Pedido {
         this.descricao = descricao;
         this.valorTotal = valorTotal;
     }
+    public Pedido() {
+		// TODO Auto-generated constructor stub
+	}
 
     // Métodos
     public void exibirDetalhes() {

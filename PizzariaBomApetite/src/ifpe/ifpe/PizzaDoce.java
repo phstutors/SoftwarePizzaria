@@ -27,7 +27,7 @@ public class PizzaDoce extends Pizza {
 		// TODO Auto-generated method stub
 		Scanner perguntarCliente = new Scanner(System.in);
 
-        System.out.println("Deseja adicionar bordas recheadas à sua pizza?");
+        System.out.println("Deseja adicionar bordas recheadas à sua pizza Doce?");
         System.out.println("1 - Sim");
         System.out.println("2 - Não");
 

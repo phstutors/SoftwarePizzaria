@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class ItemPedido {
 	private int id;
 	private int quantidade;
+<<<<<<< HEAD
 	private List<Pizza> pizzas;
 	
 
@@ -18,6 +19,20 @@ public class ItemPedido {
 	public ItemPedido() {
 		
 		}
+=======
+	private double precoUnitario;
+	private Pizza pizza;
+
+	public ItemPedido(int id, int quantidade,double precoUnitario) {
+		this.id=id;
+		this.quantidade=quantidade;
+		this.precoUnitario=precoUnitario;
+
+	}
+	public ItemPedido() {
+		// TODO Auto-generated constructor stub
+	}
+>>>>>>> f6622ea677997ef8d792e7e222b3ad5ba5b848fd
 
 	public int getId() {
 		return id;
@@ -43,10 +58,19 @@ public class ItemPedido {
 		this.pizzas = pizzas;
 	}
 
+<<<<<<< HEAD
 
 	
 	
 	
 	
+=======
+	public void setPizza(Pizza pizza) {
+		this.pizza = pizza;
+	}
+
+
+
+>>>>>>> f6622ea677997ef8d792e7e222b3ad5ba5b848fd
 
 }

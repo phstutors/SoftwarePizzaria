@@ -40,5 +40,7 @@ public class Pessoa {
 		setTelefone(telefone);
 		
 	}
-	
+	public Pessoa() {
+		// TODO Auto-generated constructor stub
+	}
 }
